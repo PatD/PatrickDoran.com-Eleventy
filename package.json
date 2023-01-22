@@ -1,0 +1,24 @@
+{
+  "name": "PatrickDoran.com-Eleventy",
+  "version": "1.0.0",
+  "description": "Rebuild of portfolio site in Eleventy",
+  "main": "index.js",
+  "scripts": {
+      "build": "eleventy",
+      "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatD/PatrickDoran.com-Eleventy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatD/PatrickDoran.com-Eleventy/issues"
+  },
+  "homepage": "https://github.com/PatD/PatrickDoran.com-Eleventy#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}

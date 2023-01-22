@@ -1,2 +1,2 @@
 # PatrickDoran.com-Eleventy
-Rebuild of portfolio site in Eleventy
+Rebuild of portfolio site in Eleventy.
