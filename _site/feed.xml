@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://example.com/">
+  <title>My Blog about Boats</title>
+  <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
+  <link href="https://example.com/feed.xml" rel="self"/>
+  <link href="https://example.com/"/>
+  <updated>2023-01-24T03:30:24Z</updated>
+  <id>https://example.com/</id>
+  <author>
+    <name>Boaty McBoatFace</name>
+    <email>me@example.com</email>
+  </author>
+</feed>

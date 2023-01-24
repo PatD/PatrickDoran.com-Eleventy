@@ -4,8 +4,8 @@
   "description": "Rebuild of portfolio site in Eleventy",
   "main": "index.js",
   "scripts": {
-      "build": "eleventy",
-      "start": "eleventy --serve"
+    "build": "eleventy",
+    "start": "eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/PatD/PatrickDoran.com-Eleventy#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@sardine/eleventy-plugin-tinyhtml": "^0.2.0"
   }
 }
