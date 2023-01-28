@@ -4,11 +4,26 @@ layout: layouts/base.njk
 ---
 <h1>Hello, world!</h1>
 
+
 <!-- site.json -->
 <h1 class="title">{{ site.title }}</h1>
 <h2 class="subtitle">{{ site.description }}</h2>
 
+<hr>
 
+<hr>
+<h2>projects</h2>
+
+
+<ul>  
+  {% for work in projects %}  
+  <li>{{ work.Title }}</li>  
+  {% endfor %}  
+</ul>
+
+
+
+<hr>
 
     <h2 class="title has-text-centered mt-3 mb-6">Recent posts</h2>
     <div class="columns">
@@ -34,3 +49,25 @@ layout: layouts/base.njk
           {% endif %}
       {% endfor %}
     </div>
+
+
+
+<hr>
+<h2>Speaking</h2>
+<div>
+{% for speak in collections.speak | reverse %}
+        {% if loop.index0 < 3 %}
+          <h3>{{ speak.data.title }}</h3>
+              <p>{{ speak.data.description }}</p>
+                <a href="{{ speak.url }}">Read speaking</a>
+          {% endif %}
+      {% endfor %}
+</div>
+
+<hr>
+<h2>All generated content</h2>
+<ul>
+{%- for post in collections.all -%}
+  <li><a href="{{ post.url }}">{{ post.url }}</a></li>
+{%- endfor -%}
+</ul>
