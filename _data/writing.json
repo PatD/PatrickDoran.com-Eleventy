@@ -1,0 +1,72 @@
+[
+    {
+        "excerpt": "https:\/\/docs.microsoft.com\/en-us\/microsoft-365\/community\/query-string-url-tricks-sharepoint-m365",
+        "date": "2022-05-22T19:28:40",
+        "postId": 209,
+        "title": "Query String URL Tricks for SharePoint & M365",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "excerpt": "https:\/\/techcommunity.microsoft.com\/t5\/public-sector-blog\/m365govcommunitycall-february-2022-power-platform-for-government\/ba-p\/3146566",
+        "date": "2022-02-10T15:12:00",
+        "postId": 204,
+        "title": "Featured Speaker \u2013 Power Platform in Gov Cloud",
+        "content": "Microsoft #M365GovCommunity"
+    },
+    {
+        "excerpt": "https:\/\/docs.microsoft.com\/en-us\/microsoft-365\/community\/highlighted-content-web-part",
+        "date": "2022-01-12T21:33:00",
+        "postId": 197,
+        "title": "Advanced Highlighted Content Web Parts",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "excerpt": "https:\/\/docs.microsoft.com\/en-us\/microsoft-365\/community\/document-sets-are-magic",
+        "date": "2020-11-24T19:36:05",
+        "postId": 34,
+        "title": "Document Sets for Process Automation",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "excerpt": "https:\/\/docs.microsoft.com\/en-us\/microsoft-365\/community\/large-lists-large-libraries-in-sharepoint",
+        "date": "2020-07-16T13:34:44",
+        "postId": 30,
+        "title": "Living Large with Large Lists in SharePoint",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "excerpt": "https:\/\/docs.microsoft.com\/en-us\/microsoft-365\/community\/creating-useful-views-in-lists-libraries",
+        "date": "2020-07-10T21:29:25",
+        "postId": 4,
+        "title": "Creating Useful Views",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "excerpt": "https:\/\/docs.microsoft.com\/en-us\/microsoft-365\/community\/versioning-basics-best-practices",
+        "date": "2020-07-01T13:31:44",
+        "postId": 28,
+        "title": "Versioning in SharePoint",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "excerpt": "https:\/\/docs.microsoft.com\/en-us\/microsoft-365\/community\/permission-model-differences",
+        "date": "2020-07-01T13:28:00",
+        "postId": 26,
+        "title": "Permissions in Group-Based SharePoint Sites",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "excerpt": "https:\/\/docs.google.com\/presentation\/d\/1NW3BZtvG2jSI3thMt8de24i29yw8xOlkj71nJHxsNDo\/",
+        "date": "2017-11-14T13:26:36",
+        "postId": 24,
+        "title": "Shouting at SharePoint",
+        "content": "SharePoint Engage Conference"
+    },
+    {
+        "excerpt": "https:\/\/www.slideshare.net\/patrickdoran\/the-humble-mighty-sharepoint-url-query-string",
+        "date": "2016-11-14T13:25:08",
+        "postId": 22,
+        "title": "The Humble, Mighty Query String",
+        "content": "SharePoint Engage Conference"
+    }
+]
