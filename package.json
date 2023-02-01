@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "tailwind watch": "npx tailwindcss -i ./css/tailwind.css -o ./css/patrickdoran.css --watch",
+    "tailwind build": "npx tailwindcss -i ./css/tailwind.css -o ./css/patrickdoran.css --minify"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-    "@sardine/eleventy-plugin-tinyhtml": "^0.2.0"
+    "@sardine/eleventy-plugin-tinyhtml": "^0.2.0",
+    "tailwindcss": "^3.2.4"
   }
 }
