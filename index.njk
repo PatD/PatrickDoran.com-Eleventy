@@ -1,25 +1,76 @@
 ---
-title: Homepage
+title: Patrick Doran is a developer and designer near Raleigh, North Carolina
+description: Learn about Patrick Doran, a developer and designer near Raleigh, North Carolina.
 layout: layouts/base.njk
 ---   
-<h1>Welcome, {{ title }}!</h1>
 
+<h1>Patrick Doran</h1>
 
+<div>
+  <p>Hello, I'm <strong>Patrick Doran</strong>, a user experience designer <span>&amp;</span> developer from North Carolina.</p>
+  
+  <img src="assets/patrick_doran_header_photo.jpg" title="Photo of Patrick Doran. He's a web developer. In this photo he is wearing sunglasses and smiling" />
 
+  <p>Since <time datetime='1998-01'><a target='_blank' href='patrick_doran_work_history.jpg' title="Pepridge Farms remembers">1998 &#x1F4BE;</a></time> I've designed and coded fast user interfaces, modern JavaScript applications, and obsessed about usability and performance.</p>
+  <p>Lately, I'm focused on building with <em>Vue</em>, <em>React</em>, and <em>Tailwind</em> for the Microsoft 365/SharePoint platform.</p>
 
+</div>
 
+<hr/>
 
+<h2>Specializing in</h2>
+  <aside>
+    <dl>
+      <dt>&#x1F6E0;&#xFE0F; Front-End Web Development  &#x1F6E0;&#xFE0F;</dt>
+      <dd><abbr title="HyperText Markup Language">HTML</abbr></dd>
+      <dd><abbr title="Cascading Style Sheets">CSS</abbr></dd>
+      <dd>JavaScript</dd>
+      <dd>Vue</dd>
+      <dd>Tailwind</dd>
+      <dd>React</dd>
+      <dd>Node</dd>
+      <dd>Express</dd>
+      <dd>PHP</dd>
+      <dd>Python</dd>
+      <dd>Svelte </dd>
+      <dd> <abbr title="Syntactically Awesome Style Sheets">SASS</abbr></dd>
+      <dd>Git</dd>
+      <dd>WordPress</dd>
+    </dl>
+    <dl>
+      <dt>&#x1F5A5;&#xFE0F; User Experience &amp; Design  &#x1F5A5;&#xFE0F;</dt>
+      <dd>Prototyping</dd>
+      <dd>Responsive design</dd>
+      <dd>Photoshop</dd>
+      <dd>Illustrator</dd>
+      <dd>Figma</dd>
+      <dd>Mockups</dd>
+      <dd>XD</dd>
+      <dd>Tableau</dd>
+    </dl>
+    <dl>
+      <dt>&#x1F39B;&#xFE0F; Microsoft 365 &amp; SharePoint  &#x1F39B;&#xFE0F;</dt>
+      <dd>SharePoint </dd>
+      <dd>#SPFX</dd>
+      <dd>Azure</dd>
+      <dd>Power BI</dd>
+      <dd>Logic Apps</dd>
+      <dd>Teams </dd>
+      <dd>Nintex</dd>
+      <dd>Power Automate</dd>
+    </dl>
+  </aside>
 
-
+<hr/>
 
 <!-- site.json -->
-<h1 class="title">{{ site.title }}</h1>
-<h2 class="subtitle">{{ site.description }}</h2>
+{# <h1 class="title">{{ site.title }}</h1>
+<h2 class="subtitle">{{ site.description }}</h2> #}
 
 <hr>
 
 <hr>
-<h2>projects</h2>
+<h2>Projects</h2>
 
 
 <ul>  
@@ -32,8 +83,8 @@ layout: layouts/base.njk
 
 <hr>
 
-    <h2 class="title has-text-centered mt-3 mb-6">Recent posts</h2>
-    <div class="columns">
+    <h2>Writing</h2>
+
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 3 %}
           <div class="column">
@@ -48,14 +99,14 @@ layout: layouts/base.njk
                   {{ post.data.description }}
                 </div>
               </div>
-              <footer class="card-footer">
-                <a href="{{ post.url }}" class="button is-fullwidth is-link card-footer-item">Read article</a>
-              </footer>
+
+                <a href="{{ post.url }}">Read article</a>
+
             </div>
           </div>
           {% endif %}
       {% endfor %}
-    </div>
+
 
 
 

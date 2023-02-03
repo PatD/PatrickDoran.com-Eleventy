@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }}</title>
-  {# <link rel="preload" href="./leaguespartan-bold-webfont.woff" as="font" type="font/woff" crossorigin="crossorigin" /> #}
-  {# <link rel="preload" href="patrick_doran_header_photo.webp" as="image" /> #}
-  <meta name="description" content="Learn about Patrick Doran, a developer and designer working near Raleigh, North Carolina." />
+  <meta name="description" content="{{ description }}" />
   <meta property="og:title" content="Patrick Doran, Developer &amp; Designer" />
   <meta property="og:url" content="https://patrickdoran.com" />
   <meta property="og:description" content="Learn about Patrick Doran, a developer and designer near Raleigh, North Carolina." />
@@ -22,8 +20,7 @@
   <meta name="msapplication-starturl" content="https://patrickdoran.com" />
   <link rel="icon" type="image/png" sizes="180x180" href="assets/apple-touch-icon-180x180.png" />
   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/apple-touch-icon-180x180.png" />
-  <link rel="stylesheet" href="tailwind_patrickdoran.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/patrickdoran.css" />
 </head>
 <body>
 
@@ -36,6 +33,7 @@
     </main>
     <footer>
        {% include "nav.njk" %}
+       {% include "social.njk" %}
     </footer>  
 </body>
 </html>
