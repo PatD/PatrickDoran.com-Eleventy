@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }}</title>
@@ -24,16 +28,18 @@
 </head>
 <body>
 
-    <h1>{{ title }}</h1>
     <header>
+    {% include "header.njk" %}
     {% include "nav.njk" %}
     </header>
     <main>
       {{ content | safe }}
     </main>
     <footer>
-       {% include "nav.njk" %}
        {% include "social.njk" %}
+      {% include "backtop.njk" %}
+      <p><em>Rolling trackballs near Raleigh, North Carolina. This is at least the 9th iteration of PatrickDoran.com.</em></p>
+      <p>Hand-built HTML like remember. Styled using <a href="https://tailwindcss.com/">Tailwind</a>. The pages are static and generated quickly with <a href="https://www.11ty.dev/">Eleventy</a>
     </footer>  
 </body>
 </html>

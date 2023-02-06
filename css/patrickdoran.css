@@ -513,6 +513,119 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 6rem;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#scrollToTop:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  --tw-gradient-from: #0c4a6e;
+  --tw-gradient-to: rgb(12 74 110 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #075985;
+  padding: 1.25rem;
+  padding-top: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+main {
+  background-color: transparent;
+}
+
+header {
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(3 105 161 / var(--tw-border-opacity));
+  padding-bottom: 1.25rem;
+}
+
+header h1 {
+  grid-column: span 4 / span 4;
+  text-shadow: 0px 5px 5px rgb(1, 22, 69);
+}
+
+header nav {
+  grid-column: span 7 / span 7;
+  grid-column-start: 6;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+header nav a {
+  grid-column: span 1 / span 1;
+  display: block;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
+menu {
+  position: fixed;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 2rem;
+}
+
+menu li {
+  margin-bottom: 1.5rem;
+}
+
+menu svg{
+  fill:#fff;
+  opacity: 0.5;
+}
+
+menu svg:hover {
+  opacity: 0.75;
+}
+
+menu span {
+  display: none;
+}
+
+h1, h2, h3, nav a{
+  font-family: 'Calistoga', cursive;
+}
+
 h1,h2,h3 {
+  font-size: 3rem;
+  line-height: 1;
   font-weight: 700;
 }

@@ -2,6 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
+#scrollToTop{
+   @apply text-slate-50 font-extrabold fixed block bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2
+}
+
+
+
+body{
+    @apply mx-auto max-w-6xl p-5 text-white pt-8 bg-gradient-to-bl to-sky-800 from-sky-900
+}
+
+main {
+    @apply bg-transparent 
+}
+
+header{
+    @apply mb-10 pb-5 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
+}
+
+header h1{
+    @apply col-span-4
+}
+
+header h1{
+    text-shadow: 0px 5px 5px rgb(1, 22, 69);
+}
+
+header nav{
+    @apply col-span-7 col-start-6 grid grid-flow-col
+}
+
+header nav a{
+    @apply block pt-2 col-span-1 text-center
+}
+
+
+hr{
+    @apply bg-sky-600 my-6
+}
+
+menu{
+    @apply fixed w-8 top-10 right-10
+}
+
+menu li{
+    @apply mb-6
+}
+
+menu svg{
+    fill:#fff;
+    opacity: 0.5;
+}
+
+menu svg:hover{
+    @apply opacity-75
+}
+
+menu span{
+    @apply hidden
+}
+
+h1, h2, h3, nav a{
+    font-family: 'Calistoga', cursive;
+}
+
 h1,h2,h3{
-    @apply font-bold
+    @apply font-bold text-5xl
 }
