@@ -7,13 +7,15 @@ html{
 }
 
 #scrollToTop{
-   @apply text-slate-50 font-extrabold fixed block bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2
+   @apply text-slate-50 font-extrabold fixed block bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2 opacity-60 hover:opacity-100
 }
 
-
+#scrollToTop span{
+    @apply sr-only
+}
 
 body{
-    @apply mx-auto max-w-6xl p-5 text-white pt-8 bg-gradient-to-bl to-sky-800 from-sky-900
+    @apply mx-auto max-w-6xl p-5 text-white pt-28 bg-gradient-to-bl to-sky-800 from-sky-900
 }
 
 main {
@@ -21,14 +23,14 @@ main {
 }
 
 header{
-    @apply mb-10 pb-5 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
+    @apply mb-8 pb-5 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
 }
 
 header h1{
     @apply col-span-4
 }
 
-header h1{
+h1,h2{
     text-shadow: 0px 5px 5px rgb(1, 22, 69);
 }
 
@@ -70,6 +72,41 @@ h1, h2, h3, nav a{
     font-family: 'Calistoga', cursive;
 }
 
-h1,h2,h3{
+h1{
     @apply font-bold text-5xl
+}
+
+h2,h3{
+    @apply font-bold text-4xl mb-8
+}
+
+
+
+#intro p:first-of-type{
+    @apply text-3xl
+}
+#intro p{
+    @apply mb-6 text-xl
+}
+
+
+#intro img{
+    @apply float-right rounded-full border-sky-200 border-8 w-40 h-40 ml-8
+}
+
+
+#specializing{
+    @apply grid grid-flow-col grid-cols-3 gap-10
+}
+
+#specializing dl{
+    @apply col-span-1 text-center
+}
+
+#specializing dt{
+    @apply font-semibold text-center mb-3 text-lg
+}
+
+#specializing dd{
+    @apply  inline-block px-3 py-1 m-1 bg-sky-700 content-center
 }
