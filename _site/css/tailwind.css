@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
 #scrollToTop{
@@ -24,6 +24,10 @@ main {
 
 header{
     @apply mb-8 pb-5 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
+}
+
+hr{
+    @apply border-b-4 border-sky-700
 }
 
 header h1{
@@ -80,6 +84,9 @@ h2,h3{
     @apply font-bold text-4xl mb-8
 }
 
+p a{
+    @apply underline hover:text-sky-200
+}
 
 
 #intro p:first-of-type{
@@ -89,11 +96,17 @@ h2,h3{
     @apply mb-6 text-xl
 }
 
-
 #intro img{
     @apply float-right rounded-full border-sky-200 border-8 w-40 h-40 ml-8
 }
 
+#intro time a{
+    @apply no-underline
+}
+
+#intro time a span{
+    @apply underline
+}
 
 #specializing{
     @apply grid grid-flow-col grid-cols-3 gap-10
