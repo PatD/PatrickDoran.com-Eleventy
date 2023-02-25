@@ -123,3 +123,14 @@ p a{
 #specializing dd{
     @apply  inline-block px-3 py-1 m-1 bg-sky-700 content-center
 }
+
+
+#projects ul {
+
+    @apply grid grid-cols-5 gap-8
+
+}
+
+#projects li {
+    @apply bg-slate-500 col-span-1
+}

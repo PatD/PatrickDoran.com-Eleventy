@@ -1,0 +1,9 @@
+---
+pagination:
+  data: patrickworks
+  size: 1
+permalink: 'work/{{ pagination.items[0].Title | slugify}}/index.html'
+layout: layouts/base.njk
+---
+
+<h2>{{ pagination.items[0].Title }}</h2>

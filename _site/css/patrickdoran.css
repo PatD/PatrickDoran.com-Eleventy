@@ -730,3 +730,15 @@ p a:hover {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+#projects li {
+  grid-column: span 1 / span 1;
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}

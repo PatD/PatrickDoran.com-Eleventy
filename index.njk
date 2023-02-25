@@ -70,19 +70,15 @@ layout: layouts/base.njk
 {# <h1 class="title">{{ site.title }}</h1>
 <h2 class="subtitle">{{ site.description }}</h2> #}
 
-<hr>
 
-<hr>
 <h2>Projects</h2>
-
-
-<ul>  
-  {% for work in projects %}  
-  <li>{{ work.Title }}</li>  
-  {% endfor %}  
-</ul>
-
-
+<div id="works">
+  <ul>  
+    {% for work in works %}  
+    <li><a href="#">{{ work.Title }}</a><span>{{ work.id }}</span><br></li>  
+    {% endfor %}  
+  </ul>
+</div>
 
 <hr>
 
