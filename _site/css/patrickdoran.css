@@ -770,3 +770,55 @@ p a:hover {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
+
+#bodyContent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 50%;
+}
+
+#bodyContent h3 {
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+#bodyContent p {
+  margin-bottom: 1.25rem;
+}
+
+#bodyContent sup {
+  margin-bottom: 2.5rem;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+#bodyContent figure {
+  float: right;
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+#bodyContent figure img {
+  width: 14rem;
+  border-radius: 9999px;
+  border-width: 8px;
+  --tw-border-opacity: 1;
+  border-color: rgb(186 230 253 / var(--tw-border-opacity));
+}
+
+#bodyContent figure figcaption {
+  margin-top: 0.5rem;
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-style: italic;
+}
+
+
