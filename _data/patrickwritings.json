@@ -1,0 +1,58 @@
+[
+    {
+        "link": "https://learn.microsoft.com/en-us/microsoft-365/community/government-cloud",
+        "date": "2022-11-14T19:28:40",
+        "id": 210,
+        "title": "Use the Government Cloud for SharePoint and Microsoft 365",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "link": "https://learn.microsoft.com/en-us/microsoft-365/community/query-string-url-tricks-sharepoint-m365",
+        "date": "2022-05-22T19:28:40",
+        "id": 209,
+        "title": "Query String URL Tricks for SharePoint & M365",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "link": "https://learn.microsoft.com/en-us/microsoft-365/community/highlighted-content-web-part",
+        "date": "2022-01-12T21:33:00",
+        "id": 197,
+        "title": "Advanced Highlighted Content Web Parts",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "link": "https://learn.microsoft.com/en-us/microsoft-365/community/document-sets-are-magic",
+        "date": "2020-11-24T19:36:05",
+        "id": 34,
+        "title": "Document Sets for Process Automation",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "link": "https://learn.microsoft.com/en-us/microsoft-365/community/large-lists-large-libraries-in-sharepoint",
+        "date": "2020-07-16T13:34:44",
+        "id": 30,
+        "title": "Living Large with Large Lists in SharePoint",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "link": "https://learn.microsoft.com/en-us/microsoft-365/community/creating-useful-views-in-lists-libraries",
+        "date": "2020-07-10T21:29:25",
+        "id": 4,
+        "title": "Creating Useful Views",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "link": "https://learn.microsoft.com/en-us/microsoft-365/community/versioning-basics-best-practices",
+        "date": "2020-07-01T13:31:44",
+        "id": 28,
+        "title": "Versioning in SharePoint",
+        "content": "Microsoft.com M365 Community Docs"
+    },
+    {
+        "link": "https://learn.microsoft.com/en-us/microsoft-365/community/permission-model-differences",
+        "date": "2020-07-01T13:28:00",
+        "id": 26,
+        "title": "Permissions in Group-Based SharePoint Sites",
+        "content": "Microsoft.com M365 Community Docs"
+    }
+]

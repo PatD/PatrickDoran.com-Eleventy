@@ -1,0 +1,13 @@
+---
+title: Writing
+description: Patrick Doran writes
+layout: layouts/base.njk
+---
+
+Writing from Patrick Doran
+
+<ul>  
+{%- for writing in patrickwritings %}  
+<li><a href={{ writing.title | slug }}>{{ writing.title }}</a><br></li>  
+{% endfor -%}  
+</ul>

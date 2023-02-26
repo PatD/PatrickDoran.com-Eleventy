@@ -598,6 +598,11 @@ h1,h2{
   text-shadow: 0px 5px 5px rgb(1, 22, 69);
 }
 
+h1 a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(186 230 253 / var(--tw-text-opacity));
+}
+
 header nav {
   grid-column: span 7 / span 7;
   grid-column-start: 6;
@@ -610,6 +615,11 @@ header nav a {
   display: block;
   padding-top: 0.5rem;
   text-align: center;
+}
+
+header nav a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(186 230 253 / var(--tw-text-opacity));
 }
 
 hr {
@@ -723,6 +733,7 @@ p a:hover {
   margin: 0.25rem;
   display: inline-block;
   align-content: center;
+  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(3 105 161 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
@@ -731,14 +742,31 @@ p a:hover {
   padding-bottom: 0.25rem;
 }
 
-#projects ul {
+#homeWork ul {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 3rem;
 }
 
-#projects li {
-  grid-column: span 1 / span 1;
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+#homeWork li {
+  text-decoration-line: underline;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#homeWork li:hover {
+  text-decoration-line: none;
+}
+
+#homeWork li a strong {
+  display: block;
+  text-align: center;
+}
+
+#homeWork li a img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }

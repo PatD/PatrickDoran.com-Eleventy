@@ -5,7 +5,6 @@ layout: layouts/base.njk
 ---   
 
 
-
 <div id="intro">
  
   <img src="assets/patrick_doran_header_photo.jpg" title="Photo of Patrick Doran. He's a web developer. In this photo he is wearing sunglasses and smiling" />
@@ -21,7 +20,7 @@ layout: layouts/base.njk
 <hr/>
 
 
-<h2>Specializing in</h2>
+<h2>Expertise in</h2>
   <aside id="specializing">
     <dl>
       <dt>&#x1F6E0;&#xFE0F; Front-End Web Development  &#x1F6E0;&#xFE0F;</dt>
@@ -44,6 +43,7 @@ layout: layouts/base.njk
       <dt>&#x1F5A5;&#xFE0F; User Experience &amp; Design  &#x1F5A5;&#xFE0F;</dt>
       <dd>Prototyping</dd>
       <dd>Responsive design</dd>
+      <dd>Accessibility</dd>
       <dd>Photoshop</dd>
       <dd>Illustrator</dd>
       <dd>Figma</dd>
@@ -60,24 +60,27 @@ layout: layouts/base.njk
       <dd>Power BI</dd>
       <dd>Logic Apps</dd>
       <dd>Teams </dd>
-      <dd>Nintex</dd>
+      <dd>Nintex workflow</dd>
       <dd>JSON Formatting</dd>
+      <dd>Lists</dd>
     </dl>
   </aside>
 <hr/>
 
-<!-- site.json -->
-{# <h1 class="title">{{ site.title }}</h1>
-<h2 class="subtitle">{{ site.description }}</h2> #}
 
-
-<h2>Projects</h2>
-<div id="works">
+<h2>Recent work</h2>
+<div id="homeWork">
   <ul>  
-    {% for work in works %}  
-    <li><a href="#">{{ work.Title }}</a><span>{{ work.id }}</span><br></li>  
+    {% for work in patrickworks %}  
+    <li>
+        <a href=/work/{{ work.Title | slug }} title="">
+          <img loading="lazy" src=/assets/{{ work.Image }} />
+          <strong>{{ work.Title }}</strong>
+        </a>
+      </li>  
     {% endfor %}  
   </ul>
+  <a href="/work">View all work</a>
 </div>
 
 <hr>

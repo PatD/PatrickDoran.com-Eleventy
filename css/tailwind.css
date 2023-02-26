@@ -38,12 +38,17 @@ h1,h2{
     text-shadow: 0px 5px 5px rgb(1, 22, 69);
 }
 
+h1 a{
+    @apply hover:text-sky-200
+}
+
 header nav{
     @apply col-span-7 col-start-6 grid grid-flow-col
 }
 
+
 header nav a{
-    @apply block pt-2 col-span-1 text-center
+    @apply block pt-2 col-span-1 text-center hover:text-sky-200
 }
 
 
@@ -121,16 +126,22 @@ p a{
 }
 
 #specializing dd{
-    @apply  inline-block px-3 py-1 m-1 bg-sky-700 content-center
+    @apply  inline-block px-3 py-1 m-1 bg-sky-700 content-center rounded-lg
 }
 
 
-#projects ul {
-
-    @apply grid grid-cols-5 gap-8
-
+#homeWork ul {
+    @apply grid grid-cols-4 gap-12
 }
 
-#projects li {
-    @apply bg-slate-500 col-span-1
+#homeWork li {
+    @apply hover:no-underline underline transition 
+}
+
+#homeWork li a strong {
+    @apply text-center block
+}
+
+#homeWork li a img {
+    @apply rounded-t-lg
 }
