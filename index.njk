@@ -9,11 +9,13 @@ layout: layouts/base.njk
  
   <img src="assets/patrick_doran_header_photo.jpg" title="Photo of Patrick Doran. He's a web developer. In this photo he is wearing sunglasses and smiling" />
   
-  <p>Hello, I'm <strong>Patrick Doran</strong>, a user experience designer <span>&amp;</span> developer from North Carolina.</p>
+  <p>👋 Hello, I'm <strong>Patrick Doran</strong>, a user experience designer <span>&amp;</span> developer from North Carolina.</p>
   
   <p>Since <time datetime='1998-01'><a target='_blank' href='assets/patrick_doran_work_history.jpg' title="Pepridge Farms remembers"><span>1998</span>&nbsp;&#x1F4BE;</a></time> I've designed and coded fast user interfaces, modern JavaScript applications, and obsessed about usability and performance. Today I'm focused on building with <em>Vue</em>, <em>React</em>, and <em>Tailwind</em> for the Microsoft 365/SharePoint platform.</p>
 
-  <p>When I'm not busy <a href="/work">building interactive things</a>, I enjoy <a href="/writing">writing</a> and <a href="/speaking">talking shop</a>.
+  <p>When I'm not busy <a href="/work">building interactive things</a>, I enjoy <a href="/writing">writing</a> and <a href="/speaking">talking shop</a>.</p>
+  
+  <p>Link in <a href="/about" title="Learn more about Patrick">bio</a>.</p>
 
 </div>
 
@@ -85,49 +87,32 @@ layout: layouts/base.njk
 
 <hr>
 
-    <h2>Writing</h2>
+<h2>Writing</h2>
 
-      {% for post in collections.post | reverse %}
-        {% if loop.index0 < 3 %}
-          <div class="column">
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  {{ post.data.title }}
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content">
-                  {{ post.data.description }}
-                </div>
-              </div>
-
-                <a href="{{ post.url }}">Read article</a>
-
-            </div>
-          </div>
-          {% endif %}
-      {% endfor %}
+  <ul>  
+  {%- for writing in patrickwritings %}  
+  <li><a href=/writing/{{ writing.title | slug }}>{{ writing.title }}</a><br></li>  
+  {% endfor -%}  
+  </ul>
 
 
 
 
 <hr>
 <h2>Speaking</h2>
+<p>Talking shop is a favorite pasttime of mine, and talking show so others to learn is a great way to learn yourself.</p>
 <div>
-{% for speak in collections.speak | reverse %}
-        {% if loop.index0 < 3 %}
-          <h3>{{ speak.data.title }}</h3>
-              <p>{{ speak.data.description }}</p>
-                <a href="{{ speak.url }}">Read speaking</a>
-          {% endif %}
-      {% endfor %}
+  <ul>  
+  {%- for speaking in patrickspeaking %}  
+  <li><a href=/speaking/{{ speaking.title | slug }}>{{ speaking.title }}</a><br></li>  
+  {% endfor -%}  
+  </ul>
 </div>
 
 <hr>
-<h2>All generated content</h2>
+{# <h2>All generated content</h2>
 <ul>
 {%- for post in collections.all -%}
   <li><a href="{{ post.url }}">{{ post.url }}</a></li>
 {%- endfor -%}
-</ul>
+</ul> #}

@@ -1,0 +1,12 @@
+---
+title: Speaking Posting
+tags: speak
+date: 2021-06-19
+layout: layouts/post.njk
+---
+
+<ul>  
+{%- for speaking in patrickspeaking %}  
+<li><a href=/speaking/{{ speaking.title | slug }}>{{ speaking.title }}</a><br></li>  
+{% endfor -%}  
+</ul>

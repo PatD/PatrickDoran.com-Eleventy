@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://example.com/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://patrickdoran.com">
   <title>PatrickDoran.com</title>
-  <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
-  <link href="https://example.com/feed.xml" rel="self"/>
-  <link href="https://example.com/"/>
-  <updated>2023-02-26T19:08:18Z</updated>
-  <id>https://example.com/</id>
+  <subtitle>The design/development site for Patrick Doran</subtitle>
+  <link href="https://patrickdoran.com/feed.xml" rel="self"/>
+  <link href="https://patrickdoran.com"/>
+  <updated>2023-02-26T20:46:47Z</updated>
+  <id>https://patrickdoran.com</id>
   <author>
-    <name>Boaty McBoatFace</name>
-    <email>me@example.com</email>
+    <name>Patrick Doran</name>
+    <email>pdoran@gmail.com</email>
   </author>
 </feed>

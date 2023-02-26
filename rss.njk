@@ -6,7 +6,7 @@
     "title": "PatrickDoran.com",
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "language": "en",
-    "url": "https://example.com/",
+    "url": "https://patrickdoran.com",
     "author": {
       "name": "Boaty McBoatFace",
       "email": "me@example.com"
@@ -16,15 +16,15 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
   <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
+    <name>Patrick Doran</name>
+    <email>pdoran@gmail.com</email>
   </author>
   {%- for post in collections.posts | reverse %}
   {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
