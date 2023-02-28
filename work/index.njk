@@ -4,10 +4,13 @@ description: Learn about Patrick Doran, a developer and designer near Raleigh, N
 layout: layouts/base.njk
 ---   
 
-<h1>work</h1>
+<div id="bodyContent">
+<h3>Work History</h3>
 
   <ul>  
     {%- for work in patrickworks %}  
     <li><a href={{ work.Title | slug }}>{{ work.Title }}</a><br></li>  
     {% endfor -%}  
   </ul>
+  </div>
+  <hr/>

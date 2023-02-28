@@ -4,10 +4,13 @@ description: Patrick Doran writes
 layout: layouts/base.njk
 ---
 
-Writing from Patrick Doran
+<div id="bodyContent">
+<h3>Writing</h3>
 
 <ul>  
 {%- for writing in patrickwritings %}  
 <li><a href={{ writing.title | slug }}>{{ writing.title }}</a><br></li>  
 {% endfor -%}  
 </ul>
+</div>
+<hr/>

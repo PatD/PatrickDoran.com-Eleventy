@@ -6,6 +6,11 @@ html{
     scroll-behavior: smooth
 }
 
+
+footer{
+    @apply mb-20
+}
+
 #scrollToTop{
    @apply text-slate-50 font-extrabold fixed block bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2 opacity-60 hover:opacity-100
 }
@@ -146,7 +151,7 @@ p a{
 }
 
 #bodyContent{
-    @apply mx-auto w-1/2 my-10 
+    @apply mx-auto w-2/3 mt-10 mb-20
 }
 
 #bodyContent h3{
