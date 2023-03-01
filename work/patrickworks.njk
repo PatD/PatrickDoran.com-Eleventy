@@ -3,8 +3,8 @@ pagination:
   data: patrickworks
   size: 1
 permalink: 'work/{{ pagination.items[0].Title | slugify}}/index.html'
-layout: layouts/base.njk
+layout: layouts/singlecolumn.njk
 ---
 
-<h2>{{ pagination.items[0].Title }}</h2>
+<h3>{{ pagination.items[0].Title }}</h3>
 <p>{{ pagination.items[0].Description}}</p>

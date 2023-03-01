@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+---
+
+<div id="bodyContent">
+<h3>{{ title }}</h3>
+{{ content | safe }}
+</div>
+<hr/>
+<em>Published on: <time datetime="{{ page.date }}">{{ page.date }}</time></em>
