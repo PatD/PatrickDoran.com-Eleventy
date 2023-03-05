@@ -6,8 +6,8 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "tailwind watch": "npx tailwindcss -i ./css/tailwind.css -o ./css/patrickdoran.css --watch",
-    "tailwind build": "npx tailwindcss -i ./css/tailwind.css -o ./css/patrickdoran.css --minify"
+    "tailwind watch": "npx tailwindcss -i src/css/tailwind.css -o src/css/patrickdoran.css --watch",
+    "tailwind build": "npx tailwindcss -i src/css/tailwind.css -o src/css/patrickdoran.css --minify"
   },
   "repository": {
     "type": "git",
