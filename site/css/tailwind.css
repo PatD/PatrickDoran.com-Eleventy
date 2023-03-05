@@ -31,7 +31,7 @@ main {
 }
 
 header{
-    @apply mb-8 pb-5 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
+    @apply mb-10 pb-8 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
 }
 
 hr{
@@ -39,8 +39,9 @@ hr{
 }
 
 header h1{
-    @apply col-span-4
+    @apply col-span-4 -mt-4
 }
+
 
 h1,h2{
     text-shadow: 0px 5px 5px rgb(1, 22, 69);
