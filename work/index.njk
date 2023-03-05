@@ -1,11 +1,23 @@
 ---
-title: Work History
+title: Work and Projects
 description: Learn about Patrick Doran, a developer and designer near Raleigh, North Carolina.
 layout: layouts/singlecolumn.njk
 ---   
 
-<ul>  
+<ul id="workList">  
   {%- for work in patrickworks %}  
-  <li><a href={{ work.Title | slug }}>{{ work.Title }}</a><br></li>  
+     <li>
+        {# <a href=/work/{{ work.Title | slug }} title=""> #}
+          <h4>{{ work.Title }}</h4>
+          <a href={{ work.Repo }} title="View this code">Repo</a>
+          <span>Role: {{ work.Role }}</span>
+          <span>description {{ work.Description }}</span>
+          <a href={{ work.Link}}>Link</a>
+        {# </a> #}
+ 
+
+
+        <img loading="lazy" src=/assets/{{ work.Image }} />
+
   {% endfor -%}  
 </ul>

@@ -6,9 +6,12 @@ html{
     scroll-behavior: smooth
 }
 
-
 footer{
     @apply mb-20
+}
+
+html{
+    /* @apply bg-red-800 */
 }
 
 #scrollToTop{
@@ -98,6 +101,13 @@ p a{
     @apply underline hover:text-sky-200
 }
 
+#intro mark{
+    @apply bg-transparent
+}
+
+#intro mark{
+    text-shadow:0px 0px 5px #011019;
+}
 
 #intro p:first-of-type{
     @apply text-3xl
@@ -134,19 +144,24 @@ p a{
     @apply  inline-block px-3 py-1 m-1 bg-sky-700 content-center rounded-lg
 }
 
-#homeWork ul {
+#workList li{
+    @apply py-10 border-b-4 border-sky-700
+}
+
+
+#workGrid ul {
     @apply grid grid-cols-4 gap-12
 }
 
-#homeWork li {
+#workGrid li {
     @apply hover:no-underline underline transition 
 }
 
-#homeWork li a strong {
+#workGrid li a strong {
     @apply text-center block
 }
 
-#homeWork li a img {
+#workGrid li a img {
     @apply rounded-t-lg
 }
 
@@ -159,7 +174,7 @@ p a{
 }
 
 #bodyContent p{
-    @apply mb-5
+    @apply mb-5 leading-7
 }
 
 #bodyContent sup{

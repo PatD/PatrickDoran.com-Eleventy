@@ -9,9 +9,9 @@ layout: layouts/base.njk
  
   <img src="assets/patrick_doran_header_photo.jpg" title="Photo of Patrick Doran. He's a web developer. In this photo he is wearing sunglasses and smiling" />
   
-  <p>👋 Hello, I'm <strong>Patrick Doran</strong>, a user experience designer <span>&amp;</span> developer from North Carolina.</p>
+  <p>🖖 Hello, I'm <strong>Patrick Doran</strong>, a user experience designer <span>&amp;</span> developer from North Carolina.</p>
   
-  <p>Since <time datetime='1998-01'><a target='_blank' href='assets/patrick_doran_work_history.jpg' title="Pepridge Farms remembers"><span>1998</span>&nbsp;&#x1F4BE;</a></time> I've designed and coded fast user interfaces, modern JavaScript applications, and obsessed about usability and performance. Today I'm focused on building with <em>Vue</em>, <em>React</em>, and <em>Tailwind</em> for the Microsoft 365/SharePoint platform.</p>
+  <p>Since <time datetime='1998-01'><a target='_blank' href='assets/patrick_doran_work_history.jpg' title="Pepridge Farms remembers"><span>1998</span>&nbsp;<mark>&#x1F4BE;</mark></a></time> I've designed and coded fast user interfaces, modern JavaScript applications, and obsessed about usability and performance. Today I'm focused on building with <em>Vue</em>, <em>React</em>, and <em>Tailwind</em> for the Microsoft 365/SharePoint platform.</p>
 
   <p>When I'm not busy <a href="/work">building interactive things</a>, I enjoy <a href="/writing">writing</a> and <a href="/speaking">talking shop</a>.</p>
   
@@ -69,7 +69,7 @@ layout: layouts/base.njk
   </aside>
 <hr/>
 
-
+{# 
 <h2>Recent work</h2>
 <div id="homeWork">
   <ul>  
@@ -106,9 +106,9 @@ layout: layouts/base.njk
   <li><a href=/speaking/{{ speaking.title | slug }}>{{ speaking.title }}</a><br></li>  
   {% endfor -%}  
   </ul>
-</div>
+</div> #}
 
-<hr>
+
 {# <h2>All generated content</h2>
 <ul>
 {%- for post in collections.all -%}
