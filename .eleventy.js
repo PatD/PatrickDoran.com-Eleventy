@@ -2,8 +2,22 @@ const tinyHTML = require('@sardine/eleventy-plugin-tinyhtml');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+
+    // Removes file name extension
+    eleventyConfig.addFilter("stripFilename", (file) => {
+      let thisFileName = file.replace(/\.[^/.]+$/, "");
+
+      thisFileName = thisFileName.replace("layouts/","");
+     return thisFileName
+    });
+
+    // Returns a human readable date
+    eleventyConfig.addFilter("postDate", (dateObj) => {
+      return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    });
 
     // Copy the `css` directory to the output
     eleventyConfig.addPassthroughCopy('src/css');  

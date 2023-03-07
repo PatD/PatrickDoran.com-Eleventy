@@ -615,14 +615,14 @@ main {
 }
 
 header {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   border-bottom-width: 4px;
   --tw-border-opacity: 1;
   border-color: rgb(3 105 161 / var(--tw-border-opacity));
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 hr {
@@ -655,13 +655,21 @@ header nav {
 header nav a {
   grid-column: span 1 / span 1;
   display: block;
+  border-radius: 9999px;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   text-align: center;
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
 }
 
 header nav a:hover {
-  --tw-text-opacity: 1;
-  color: rgb(186 230 253 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 89 133 / var(--tw-bg-opacity));
+  text-decoration-line: underline;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 hr {
@@ -826,7 +834,7 @@ p a:hover {
   border-top-right-radius: 0.5rem;
 }
 
-#bodyContent {
+#singlecolumn main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.5rem;
@@ -834,33 +842,33 @@ p a:hover {
   width: 66.666667%;
 }
 
-#bodyContent h3 {
+#singlecolumn h3 {
   margin-bottom: 0.75rem;
   margin-top: 2rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-#bodyContent p {
+#singlecolumn p {
   margin-bottom: 1.25rem;
   line-height: 1.75rem;
 }
 
-#bodyContent sup {
+#singlecolumn sup {
   margin-bottom: 2.5rem;
   display: block;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-#bodyContent figure {
+#singlecolumn figure {
   float: right;
   margin-left: 1.25rem;
   margin-bottom: 1.25rem;
   display: block;
 }
 
-#bodyContent figure img {
+#singlecolumn figure img {
   width: 14rem;
   border-radius: 9999px;
   border-width: 8px;
@@ -868,7 +876,7 @@ p a:hover {
   border-color: rgb(186 230 253 / var(--tw-border-opacity));
 }
 
-#bodyContent figure figcaption {
+#singlecolumn figure figcaption {
   margin-top: 0.5rem;
   display: block;
   text-align: center;
@@ -877,4 +885,17 @@ p a:hover {
   font-style: italic;
 }
 
+#cred {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
 
+#cred iframe {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}

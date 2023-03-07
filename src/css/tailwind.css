@@ -31,7 +31,7 @@ main {
 }
 
 header{
-    @apply mb-10 pb-8 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
+    @apply mb-8 pb-6 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
 }
 
 hr{
@@ -57,7 +57,7 @@ header nav{
 
 
 header nav a{
-    @apply block pt-2 col-span-1 text-center hover:text-sky-200
+    @apply block py-2 col-span-1 text-center hover:underline decoration-dashed underline-offset-4 hover:bg-sky-800 hover:transition-opacity rounded-full
 }
 
 
@@ -166,32 +166,39 @@ p a{
     @apply rounded-t-lg
 }
 
-#bodyContent{
+#singlecolumn main{
     @apply mx-auto w-2/3 mt-10 mb-20
 }
 
-#bodyContent h3{
+#singlecolumn h3{
     @apply text-3xl mb-3 mt-8
 }
 
-#bodyContent p{
+#singlecolumn p{
     @apply mb-5 leading-7
 }
 
-#bodyContent sup{
+#singlecolumn sup{
     @apply text-lg mb-10 block
 }
 
-#bodyContent figure {
+#singlecolumn figure {
     @apply float-right block ml-5 mb-5
 }
 
-#bodyContent figure img{
+#singlecolumn figure img{
     @apply  rounded-full border-sky-200 border-8 w-56
 }
 
-#bodyContent figure figcaption{
+#singlecolumn figure figcaption{
     @apply italic block text-center text-sm mt-2
 }
 
 
+#cred {
+    @apply grid grid-flow-row grid-cols-3 gap-5 mx-auto
+}
+
+#cred iframe{
+    @apply bg-white rounded-lg
+}

@@ -26,7 +26,7 @@
   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/apple-touch-icon-180x180.png" />
   <link rel="stylesheet" href="/css/patrickdoran.css" />
 </head>
-<body>
+<body id="{{ layout | stripFilename }}" >
     <header>
     {% include "header.njk" %}
     {% include "nav.njk" %}
@@ -34,6 +34,7 @@
     <main>
       {{ content | safe }}
     </main>
+    <em>Published on: <time datetime="{{ page.date }}">{{ page.date | postDate }}</time></em>
     <footer>
       {% include "social.njk" %}
       {% include "backtop.njk" %}
