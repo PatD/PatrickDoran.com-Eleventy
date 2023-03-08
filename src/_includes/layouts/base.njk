@@ -34,6 +34,7 @@
     <main>
       {{ content | safe }}
     </main>
+    <hr/>
     <em>Published on: <time datetime="{{ page.date }}">{{ page.date | postDate }}</time></em>
     <footer>
       {% include "social.njk" %}

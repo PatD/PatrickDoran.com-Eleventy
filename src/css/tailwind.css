@@ -86,7 +86,7 @@ menu span{
     @apply hidden
 }
 
-h1, h2, h3, nav a{
+h1, h2, h3, h4, nav a{
     font-family: 'Calistoga', cursive;
 }
 
@@ -96,6 +96,10 @@ h1{
 
 h2,h3{
     @apply font-bold text-4xl mb-8
+}
+
+h4,h5{
+    @apply font-bold text-2xl mb-4 mt-12
 }
 
 p a{
@@ -201,4 +205,14 @@ p a{
 
 #cred iframe{
     @apply bg-white rounded-lg
+}
+
+#iterations div{
+    @apply w-3/4 mx-auto mb-20 odd:rotate-3 even:-rotate-3 even:text-right odd:text-left
+}
+#iterations em{
+    @apply text-sky-300 not-italic block p-2 text-sm
+}
+#iterations img{
+    @apply rounded-xl border-white border-4  
 }
