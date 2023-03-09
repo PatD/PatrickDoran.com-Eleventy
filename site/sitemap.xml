@@ -52,6 +52,11 @@
         </url>
     
         <url>
+            <loc>https://patrickdoran.com/api/patrickspeaking.json</loc>
+            <lastmod>2023-03-09T03:25:36.463Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://patrickdoran.com/history/</loc>
             <lastmod>2023-03-19T00:00:00.000Z</lastmod>
         </url>
