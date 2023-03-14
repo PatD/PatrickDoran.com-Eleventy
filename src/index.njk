@@ -26,48 +26,24 @@ layout: layouts/fullwidth.njk
   <aside id="specializing">
     <dl>
       <dt>&#x1F6E0;&#xFE0F; Front-End Web Development  &#x1F6E0;&#xFE0F;</dt>
-      <dd><abbr title="HyperText Markup Language">HTML</abbr></dd>
-      <dd><abbr title="Cascading Style Sheets">CSS</abbr></dd>
-      <dd>JavaScript</dd>
-      <dd>Vue</dd>
-      <dd>Tailwind</dd>
-      <dd>React</dd>
-      <dd>Node &amp; Express</dd>
-      <dd>PHP</dd>
-      <dd>Python</dd>
-      <dd>Svelte </dd>
-      <dd> <abbr title="Syntactically Awesome Style Sheets">SASS</abbr></dd>
-      <dd>Git</dd>
-      <dd>WordPress</dd>
-      <dd>Eleventy</dd>
+      {% for skill in site.skillsFrontEnd %} 
+        <dd>{{skill}}</dd>
+      {% endfor %}  
     </dl>
     <dl>
       <dt>&#x1F5A5;&#xFE0F; User Experience &amp; Design  &#x1F5A5;&#xFE0F;</dt>
-      <dd>Prototyping</dd>
-      <dd>Responsive design</dd>
-      <dd>Accessibility</dd>
-      <dd>Photoshop</dd>
-      <dd>Illustrator</dd>
-      <dd>Figma</dd>
-      <dd>Mockups</dd>
-      <dd>XD</dd>
-      <dd>Tableau</dd>
+      {% for skill in site.skillsUX %} 
+        <dd>{{skill}}</dd>
+      {% endfor %}  
     </dl>
     <dl>
       <dt>&#x1F39B;&#xFE0F; Microsoft 365 &amp; SharePoint  &#x1F39B;&#xFE0F;</dt>
-      <dd>SharePoint</dd>
-      <dd>Power Automate</dd>
-      <dd>#SPFX</dd>
-      <dd>Azure</dd>
-      <dd>Power BI</dd>
-      <dd>Logic Apps</dd>
-      <dd>Teams </dd>
-      <dd>Nintex workflow</dd>
-      <dd>JSON Formatting</dd>
-      <dd>Lists</dd>
+      {% for skill in site.skillsM365 %} 
+        <dd>{{skill}}</dd>
+      {% endfor %}  
     </dl>
   </aside>
-<hr/>
+
 
 {# 
 <h2>Recent work</h2>

@@ -4,8 +4,12 @@ description: Patrick Doran writes
 layout: layouts/singlecolumn.njk
 ---
 
+<p>Any designer or developer worth their salt has benefited from the knowledge sharing of the larger community. When I can, I think its important to share what I can. Here's some published writing I've typed up over the years.</p>
+
 <ul>  
 {%- for writing in patrickwritings %}  
-<li><a href={{ writing.title | slug }}>{{ writing.title }}</a><br></li>  
+<li>
+    <a href={{ writing.link }} target={{ writing.external }}>{{ writing.title }}</a> <span>{{ writing.date }}</span>
+</li>  
 {% endfor -%}  
 </ul>
