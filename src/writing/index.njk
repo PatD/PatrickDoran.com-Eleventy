@@ -9,7 +9,7 @@ layout: layouts/singlecolumn.njk
 <ul>  
 {%- for writing in patrickwritings %}  
 <li>
-    <a href={{ writing.link }} target={{ writing.external }}>{{ writing.title }}</a> <span>{{ writing.date }}</span>
+    <a href={{ writing.link }} target={{ writing.external }}>{{ writing.title }}</a> <span>{{ writing.date | linkDate }}</span>
 </li>  
 {% endfor -%}  
 </ul>
