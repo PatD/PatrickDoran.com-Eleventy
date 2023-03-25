@@ -16,13 +16,13 @@ module.exports = function (eleventyConfig) {
 
     // Returns a human readable date
     eleventyConfig.addFilter("postDate", (dateObj) => {
-      return DateTime.fromJSDate(dateObj).toLocaleDateString(DateTime.DATE_FULL);
+      // return DateTime.fromJSDate(dateObj).toLocaleDateString(DateTime.DATE_FULL);
     });
 
       // Returns a human readable date
       eleventyConfig.addFilter("linkDate", (passedDate) => {
         const passedDateasDate = new Date(passedDate)
-        console.log(passedDateasDate.toLocaleDateString(DateTime.DATE_SHORT))
+        // console.log(passedDateasDate.toLocaleDateString(DateTime.DATE_SHORT))
         return passedDateasDate.toLocaleDateString(DateTime.DATE_FULL);
       });
 

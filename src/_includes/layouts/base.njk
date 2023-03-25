@@ -27,6 +27,14 @@
   <link rel="stylesheet" href="/css/patrickdoran.css" />
 </head>
 <body id="{{ layout | stripFilename }}" >
+<div id="debug">
+<div class="breakpointxs">XS</div>
+<div class="breakpointsm">Sm</div>
+<div class="breakpointmd">Md</div>
+<div class="breakpointlg">Lg</div>
+<div class="breakpointxl">XL</div>
+<div class="breakpoint2xl">2xl</div>
+</div>
     <header>
     {% include "header.njk" %}
     {% include "nav.njk" %}
@@ -34,9 +42,10 @@
     <main>
       {{ content | safe }}
     </main>
-    <hr/>
-    <em>Published on: <time datetime="{{ page.date }}">{{ page.date | postDate }}</time></em>
+    
+    {# <em>Published on: <time datetime="{{ page.date }}">{{ page.date | postDate }}</time></em> #}
     <footer>
+      <hr/>
       {% include "social.njk" %}
       {% include "backtop.njk" %}
       <br/>

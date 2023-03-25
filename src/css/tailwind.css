@@ -2,16 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+
+#debug{
+    @apply bottom-5 right-5 absolute opacity-10
+}
+.breakpointxs{ @apply sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden}
+.breakpointsm{ @apply sm:block md:hidden lg:hidden xl:hidden 2xl:hidden}
+.breakpointmd{ @apply sm:hidden md:block lg:hidden xl:hidden 2xl:hidden }
+.breakpointlg{ @apply sm:hidden md:hidden lg:block xl:hidden 2xl:hidden }
+.breakpointxl{ @apply sm:hidden md:hidden lg:hidden xl:block 2xl:hidden }
+.breakpoint2xl{ @apply sm:hidden md:hidden lg:hidden xl:hidden 2xl:block}
+
+
+
+
 html{
     scroll-behavior: smooth
 }
 
+body{
+    @apply text-xl mx-auto max-w-md md:max-w-6xl p-5 text-white pt-6 md:pt-28 bg-gradient-to-bl to-sky-800 from-sky-900
+}
+
+#scrollToTop span{
+    @apply sr-only
+}
+
+#scrollToTop{
+    @apply text-slate-50 font-extrabold fixed block bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2 opacity-60 hover:opacity-100
+ }
+
+main {
+    @apply bg-transparent 
+}
+
+h1, h2, h3, h4, nav a{
+    font-family: 'Calistoga', 'Times New Roman', Times, serif;
+    text-shadow: 0px 5px 5px rgb(1, 22, 69);
+}
+
+h1{
+    @apply font-bold text-5xl
+}
+
+h2,h3{
+    @apply font-bold text-4xl mb-8
+}
+
+h4,h5{
+    @apply font-bold text-2xl mb-4 mt-12
+}
+/* 
 footer{
     @apply mb-20
 }
 
 html{
-    /* @apply bg-red-800 */
+    
 }
 
 #scrollToTop{
@@ -23,7 +70,7 @@ html{
 }
 
 body{
-    @apply mx-auto max-w-6xl p-5 text-white pt-28 bg-gradient-to-bl to-sky-800 from-sky-900
+    @apply text-xl mx-auto max-w-6xl p-5 text-white pt-28 bg-gradient-to-bl to-sky-800 from-sky-900
 }
 
 main {
@@ -216,3 +263,25 @@ p a{
 #iterations img{
     @apply rounded-xl border-white border-4  
 }
+
+
+.articleLinks li {
+    @apply my-12 leading-10
+}
+
+.articleLinks time{
+    @apply font-mono text-sky-200 block text-sm leading-5
+}
+
+.articleLinks a{
+    @apply text-sky-50 block underline-offset-4 underline hover:decoration-wavy hover:text-sky-200
+}
+
+
+.timeline{
+    @apply mb-10
+}
+
+.timeline h4{
+    @apply mt-0
+} */

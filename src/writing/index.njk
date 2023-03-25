@@ -6,10 +6,12 @@ layout: layouts/singlecolumn.njk
 
 <p>Any designer or developer worth their salt has benefited from the knowledge sharing of the larger community. When I can, I think its important to share what I can. Here's some published writing I've typed up over the years.</p>
 
-<ul>  
+<ul class="articleLinks">  
 {%- for writing in patrickwritings %}  
 <li>
-    <a href={{ writing.link }} target={{ writing.external }}>{{ writing.title }}</a> <span>{{ writing.date | linkDate }}</span>
+    <time datetime={{ writing.date }}>{{ writing.date | linkDate }}</time>
+    <a href={{ writing.link }} target={{ writing.external }}>{{ writing.title }}</a> 
+    <p>{{ writing.content }}</p>
 </li>  
 {% endfor -%}  
 </ul>

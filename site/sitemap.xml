@@ -2,16 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://patrickdoran.com/posts/first-post/</loc>
-            <lastmod>2021-06-19T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://patrickdoran.com/posts/second-post/</loc>
-            <lastmod>2021-06-19T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
             <loc>https://patrickdoran.com/speaking/</loc>
             <lastmod>2021-06-19T00:00:00.000Z</lastmod>
         </url>
@@ -49,11 +39,6 @@
         <url>
             <loc>https://patrickdoran.com/about/</loc>
             <lastmod>2023-03-05T17:51:17.374Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://patrickdoran.com/api/patrickspeaking.json</loc>
-            <lastmod>2023-03-09T03:25:36.463Z</lastmod>
         </url>
     
         <url>

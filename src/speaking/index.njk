@@ -5,10 +5,14 @@ date: 2021-06-19
 layout: layouts/singlecolumn.njk
 ---
 
-<ul>  
+<ul class="articleLinks">  
 {%- for speaking in patrickspeaking %}  
-<li><a href=/speaking/{{ speaking.title | slug }}>{{ speaking.title }}</a><br></li>  
-{% endfor -%}  
+<li>
+    <time datetime={{ speaking.date }}>{{ speaking.date | linkDate }}</time>
+    <a href="{{ speaking.link }}" target={{ speaking.external }}>{{ speaking.title }}</a> 
+    <p>{{ speaking.content }}</p>
+</li>  
+{% endfor -%} 
 </ul>
 
 <img src="/assets/patrickdoran-speaking-shouting.jpg" loading="lazy" alt="Photograph of slides being presented at the SharePoint Engage Conference in Raleigh" />
