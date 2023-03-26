@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide the checkbox, menu and close button by default */
+/* Hide the open button when the menu is open */
+#menustate,nav ul,nav .close, 
+#menustate:checked ~ nav .open {
+    @apply hidden
+}
+
+/*
+    Show the menu and close button when the menu is open
+    (when the #menustate input field is checked)
+*/
+#menustate:checked ~ nav :is(ul, .close) {
+    @apply block border-red-500 border-4 absolute top-0 left-0 w-full bg-sky-500 h-full
+}
+
+
+
+
+
 
 #debug{
     @apply bottom-5 right-5 absolute opacity-10
@@ -15,13 +34,17 @@
 
 
 
-
 html{
     scroll-behavior: smooth
 }
 
+html{
+    @apply bg-sky-200
+}
+
 body{
-    @apply text-xl mx-auto max-w-md md:max-w-6xl p-5 text-white pt-6 md:pt-28 bg-gradient-to-bl to-sky-800 from-sky-900
+    @apply text-xl mx-auto max-w-md p-5 text-white pt-6 bg-gradient-to-bl to-sky-800 from-sky-900
+    md:max-w-6xl md:pt-28 
 }
 
 #scrollToTop span{
@@ -29,95 +52,71 @@ body{
 }
 
 #scrollToTop{
-    @apply text-slate-50 font-extrabold fixed block bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2 opacity-60 hover:opacity-100
+    @apply hidden md:block text-slate-50 font-extrabold fixed bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2 opacity-60 hover:opacity-100
  }
 
 main {
     @apply bg-transparent 
 }
 
-h1, h2, h3, h4, nav a{
+h1, h2, h3, h4, nav a, #specializing dt{
     font-family: 'Calistoga', 'Times New Roman', Times, serif;
+}
+
+
+h1, h2, h3 {
     text-shadow: 0px 5px 5px rgb(1, 22, 69);
 }
 
+
 h1{
-    @apply font-bold text-5xl
+    @apply font-bold text-5xl col-span-4 -mt-4 hover:text-sky-200
 }
 
 h2,h3{
     @apply font-bold text-4xl mb-8
 }
 
+
 h4,h5{
     @apply font-bold text-2xl mb-4 mt-12
-}
-/* 
-footer{
-    @apply mb-20
-}
-
-html{
-    
-}
-
-#scrollToTop{
-   @apply text-slate-50 font-extrabold fixed block bottom-5 left-10 w-24 mx-auto transition hover:-translate-y-2 opacity-60 hover:opacity-100
-}
-
-#scrollToTop span{
-    @apply sr-only
-}
-
-body{
-    @apply text-xl mx-auto max-w-6xl p-5 text-white pt-28 bg-gradient-to-bl to-sky-800 from-sky-900
-}
-
-main {
-    @apply bg-transparent 
-}
-
-header{
-    @apply mb-8 pb-6 grid grid-flow-col grid-cols-12 border-b-4 border-sky-700
 }
 
 hr{
     @apply border-b-4 border-sky-700
 }
 
-header h1{
-    @apply col-span-4 -mt-4
+header{
+    @apply mb-8 pb-6 pt-10 border-b-4 border-sky-700
+           md:grid md:grid-flow-col md:grid-cols-12 
 }
 
-
-h1,h2{
-    text-shadow: 0px 5px 5px rgb(1, 22, 69);
+nav{
+    @apply md:col-span-7 md:col-start-6 md:grid md:grid-flow-col
 }
 
-h1 a{
-    @apply hover:text-sky-200
+nav label span{
+    @apply text-5xl absolute top-11 right-5
 }
 
-header nav{
-    @apply col-span-7 col-start-6 grid grid-flow-col
-}
 
 
 header nav a{
     @apply block py-2 col-span-1 text-center hover:underline decoration-dashed underline-offset-4 hover:bg-sky-800 hover:transition-opacity rounded-full
 }
 
-
-hr{
-    @apply bg-sky-600 my-6
+p a{
+    @apply underline hover:text-sky-200 hover:underline decoration-dashed underline-offset-4 hover:bg-sky-800 hover:transition-opacity
 }
 
+
 menu{
-    @apply fixed w-8 top-10 right-10
+    @apply fixed w-full bottom-0 left-0 right-0 bg-sky-900 py-6 px-3 grid grid-flow-col-dense gap-4 content-evenly
+            md:right-10 md:top-10 md:w-8
 }
 
 menu li{
-    @apply mb-6
+    @apply md:mb-6 w-8 h-8
 }
 
 menu svg{
@@ -133,43 +132,21 @@ menu span{
     @apply hidden
 }
 
-h1, h2, h3, h4, nav a{
-    font-family: 'Calistoga', cursive;
-}
-
-h1{
-    @apply font-bold text-5xl
-}
-
-h2,h3{
-    @apply font-bold text-4xl mb-8
-}
-
-h4,h5{
-    @apply font-bold text-2xl mb-4 mt-12
-}
-
-p a{
-    @apply underline hover:text-sky-200
-}
 
 #intro mark{
     @apply bg-transparent
 }
 
-#intro mark{
-    text-shadow:0px 0px 5px #011019;
-}
-
 #intro p:first-of-type{
-    @apply text-3xl
+    @apply text-3xl pt-5
 }
 #intro p{
     @apply mb-6 text-xl
 }
 
 #intro img{
-    @apply float-right rounded-full border-sky-200 border-8 w-40 h-40 ml-8
+    @apply  rounded-full border-sky-200 border-8 w-40 h-40 mx-auto
+            md:float-right md:ml-8
 }
 
 #intro time a{
@@ -180,12 +157,14 @@ p a{
     @apply underline
 }
 
+
 #specializing{
-    @apply grid grid-flow-col grid-cols-3 gap-10
+    @apply pt-12 pb-4
+    /* @apply pt-8 md:grid grid-flow-col grid-cols-3 gap-10 */
 }
 
 #specializing dl{
-    @apply col-span-1 text-center
+    @apply col-span-1 text-center mb-12
 }
 
 #specializing dt{
@@ -193,8 +172,83 @@ p a{
 }
 
 #specializing dd{
-    @apply  inline-block px-3 py-1 m-1 bg-sky-700 content-center rounded-lg
+    @apply inline-block px-3 py-1 m-1 bg-sky-700 content-center rounded-lg
 }
+
+
+
+.timeline{
+    @apply mb-10
+}
+
+.timeline h4{
+    @apply mt-0
+}
+
+#cred {
+    @apply grid grid-flow-row grid-cols-3 gap-5 mx-auto
+}
+
+#cred iframe{
+    @apply bg-white rounded-lg
+}
+
+#iterations div{
+    @apply w-3/4 mx-auto mb-20 odd:rotate-3 even:-rotate-3 even:text-right odd:text-left
+}
+#iterations em{
+    @apply text-sky-300 not-italic block p-2 text-sm
+}
+#iterations img{
+    @apply rounded-xl border-white border-4  
+}
+
+
+.articleLinks li {
+    @apply my-12 leading-10
+}
+
+.articleLinks time{
+    @apply font-mono text-sky-200 block text-sm leading-5
+}
+
+.articleLinks a{
+    @apply text-sky-50 block underline-offset-4 underline hover:decoration-wavy hover:text-sky-200
+}
+
+
+footer{
+    @apply mb-40 pt-5 text-center text-sky-200
+}
+
+footer p{
+    @apply mb-8 text-lg
+}
+
+
+/* 
+
+
+body{
+    @apply text-xl mx-auto max-w-6xl p-5 text-white pt-28 bg-gradient-to-bl to-sky-800 from-sky-900
+}
+
+main {
+    @apply bg-transparent 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #workList li{
     @apply py-10 border-b-4 border-sky-700
@@ -246,42 +300,12 @@ p a{
 }
 
 
-#cred {
-    @apply grid grid-flow-row grid-cols-3 gap-5 mx-auto
-}
-
-#cred iframe{
-    @apply bg-white rounded-lg
-}
-
-#iterations div{
-    @apply w-3/4 mx-auto mb-20 odd:rotate-3 even:-rotate-3 even:text-right odd:text-left
-}
-#iterations em{
-    @apply text-sky-300 not-italic block p-2 text-sm
-}
-#iterations img{
-    @apply rounded-xl border-white border-4  
-}
 
 
-.articleLinks li {
-    @apply my-12 leading-10
-}
-
-.articleLinks time{
-    @apply font-mono text-sky-200 block text-sm leading-5
-}
-
-.articleLinks a{
-    @apply text-sky-50 block underline-offset-4 underline hover:decoration-wavy hover:text-sky-200
-}
 
 
-.timeline{
-    @apply mb-10
-}
 
-.timeline h4{
-    @apply mt-0
-} */
+
+
+
+ */

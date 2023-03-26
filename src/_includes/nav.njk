@@ -1,20 +1,34 @@
+<input 
+  aria-hidden="true" 
+  aria-label="Toggle main menu"
+  type="checkbox" 
+  id="menustate" />
+
 <nav role="navigation" aria-label="main navigation">
-    <a href="/">
+
+  <label for="menustate" aria-hidden="true" title="Toggle the main navigation">
+    <span class="open" aria-label="Open main menu">≡</span>
+    <span class="close" aria-label="Close main menu">×</span>
+  </label>
+
+  <ul>
+    <li><a href="/">
       Home
     </a>
-      <a href="/work">
+      <li><a href="/work">
       Work
     </a>
-    <a href="/about">
+    <li><a href="/about">
       About
     </a>
-  <a href="/history">
+  <li><a href="/history">
       History
     </a>
-  <a href="/writing">
+  <li><a href="/writing">
       Writing
     </a>
-      <a href="/speaking">
+     <li> <a href="/speaking">
       Speaking
     </a>
+</ul>
 </nav>
