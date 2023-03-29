@@ -546,34 +546,6 @@ video {
   transition-duration: 150ms;
 }
 
-/* Hide the checkbox, menu and close button by default */
-
-/* Hide the open button when the menu is open */
-
-#menustate,nav ul,nav .close, 
-#menustate:checked ~ nav .open {
-  display: none;
-}
-
-/*
-    Show the menu and close button when the menu is open
-    (when the #menustate input field is checked)
-*/
-
-#menustate:checked ~ nav :is(ul, .close) {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  display: block;
-  height: 100%;
-  width: 100%;
-  border-width: 4px;
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
-}
-
 #debug {
   position: absolute;
   bottom: 1.25rem;
@@ -761,23 +733,44 @@ video {
   }
 }
 
+body {
+  --sb-track-color: #075985;
+  --sb-thumb-color: #afdcea;
+  --sb-size: 11px;
+  scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 15px;
+  border: 1px solid #022d44;
+}
+
 html{
   scroll-behavior: smooth;
-  --tw-bg-opacity: 1;
-  background-color: rgb(186 230 253 / var(--tw-bg-opacity))
+  /* @apply bg-sky-200 */
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  --tw-gradient-from: #0c4a6e;
+  --tw-gradient-to: rgb(12 74 110 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #075985
 }
 
 body {
   margin-left: auto;
   margin-right: auto;
-  max-width: 28rem;
-  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
-  --tw-gradient-from: #0c4a6e;
-  --tw-gradient-to: rgb(12 74 110 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #075985;
   padding: 1.25rem;
-  padding-top: 1.5rem;
+  padding-top: 1.25rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -904,12 +897,72 @@ header {
   }
 }
 
+/* Hide the checkbox, menu and close button by default */
+
+/* Hide the open button when the menu is open */
+
+#menustate,
+nav ul,
+nav .close, 
+#menustate:checked ~ nav .open {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: block;
+  }
+}
+
+/*
+    Show the menu and close button when the menu is open
+    (when the #menustate input field is checked)
+*/
+
+#menustate:checked ~ nav :is(ul, .close) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(3 105 161 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  --tw-gradient-from: #0284c7;
+  --tw-gradient-to: rgb(2 132 199 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #0c4a6e;
+  padding-top: 8rem;
+}
+
+@media (min-width: 768px) {
+  #menustate:checked ~ nav :is(ul, .close) {
+    z-index: auto;
+    height: auto;
+    background-image: none;
+  }
+}
+
 nav label span {
   position: absolute;
   top: 2.75rem;
   right: 1.25rem;
   font-size: 3rem;
   line-height: 1;
+}
+
+nav li label {
+  margin-top: 7rem;
+  display: block;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-style: normal;
 }
 
 header nav a {
@@ -959,8 +1012,11 @@ menu {
   grid-auto-flow: column dense;
   align-content: space-evenly;
   gap: 1rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #0f172a;
+  --tw-gradient-to: rgb(15 23 42 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #0c4a6e;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 0.75rem;
@@ -971,7 +1027,11 @@ menu {
   menu {
     right: 2.5rem;
     top: 2.5rem;
+    left: auto;
+    bottom: auto;
+    display: block;
     width: 2rem;
+    background-image: none;
   }
 }
 

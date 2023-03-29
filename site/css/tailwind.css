@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hide the checkbox, menu and close button by default */
-/* Hide the open button when the menu is open */
-#menustate,nav ul,nav .close, 
-#menustate:checked ~ nav .open {
-    @apply hidden
-}
-
-/*
-    Show the menu and close button when the menu is open
-    (when the #menustate input field is checked)
-*/
-#menustate:checked ~ nav :is(ul, .close) {
-    @apply block border-red-500 border-4 absolute top-0 left-0 w-full bg-sky-500 h-full
-}
-
-
-
-
 
 
 #debug{
@@ -34,17 +16,45 @@
 
 
 
+body {
+    --sb-track-color: #075985;
+    --sb-thumb-color: #afdcea;
+    --sb-size: 11px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 15px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 15px;
+    border: 1px solid #022d44;
+}
+
+
+
+
 html{
     scroll-behavior: smooth
 }
 
 html{
-    @apply bg-sky-200
+    /* @apply bg-sky-200 */
+    @apply bg-gradient-to-bl to-sky-800 from-sky-900
 }
 
 body{
-    @apply text-xl mx-auto max-w-md p-5 text-white pt-6 bg-gradient-to-bl to-sky-800 from-sky-900
-    md:max-w-6xl md:pt-28 
+    @apply text-xl mx-auto p-5 text-white pt-5 
+    md:max-w-6xl md:pt-28
 }
 
 #scrollToTop span{
@@ -91,12 +101,43 @@ header{
            md:grid md:grid-flow-col md:grid-cols-12 
 }
 
+
+
 nav{
     @apply md:col-span-7 md:col-start-6 md:grid md:grid-flow-col
 }
 
+/* Hide the checkbox, menu and close button by default */
+/* Hide the open button when the menu is open */
+#menustate,
+nav ul,
+nav .close, 
+#menustate:checked ~ nav .open {
+    @apply hidden
+}
+
+nav ul{
+    @apply md:block
+}
+
+/*
+    Show the menu and close button when the menu is open
+    (when the #menustate input field is checked)
+*/
+#menustate:checked ~ nav :is(ul, .close) {
+    @apply block pt-32 bg-gradient-to-bl to-sky-900 from-sky-600 border-4 border-sky-700 
+    absolute top-0 left-0 w-full bg-sky-500 h-full z-10
+
+    md:bg-none md:h-auto md:z-auto
+}
+
+
 nav label span{
     @apply text-5xl absolute top-11 right-5
+}
+
+nav li label {
+    @apply block text-3xl text-center not-italic mt-28
 }
 
 
@@ -111,8 +152,9 @@ p a{
 
 
 menu{
-    @apply fixed w-full bottom-0 left-0 right-0 bg-sky-900 py-6 px-3 grid grid-flow-col-dense gap-4 content-evenly
-            md:right-10 md:top-10 md:w-8
+    @apply fixed w-full bottom-0 left-0 right-0 py-6 px-3 grid grid-flow-col-dense gap-4 content-evenly
+    bg-gradient-to-br to-sky-900 from-slate-900
+    md:right-10 md:top-10 md:w-8 md:left-auto md:bottom-auto md:bg-none md:block
 }
 
 menu li{
