@@ -3,7 +3,7 @@
     "url": "https://patrickdoran.com",
     "language": "en-US",
     "description": "The design/development site for Patrick Doran",
-    "skillsFrontEnd":["HTML","CSS","JavaScript","Vue","Tailwind","React","Node & Express","PHP","Python","Svelte","SASS","Git","WordPress","Eleventy"],
-    "skillsUX":["Prototyping","Responsive design","Accessibility","PhotoShop","Illustrator","Figma","Mockups","XD","Tableau"],
-    "skillsM365":["SharePoint","Power Automate","#SPFX","Azure","Power BI","Logic Apps","Teams","Nintex Workflow","JSON Formatting","Lists","Power Apps"]
+    "skillsFrontEnd":["HTML","CSS","JavaScript","Vue","Tailwind","React","Node & Express","PHP","XML","JSON","Python","Svelte","SASS","Git","WordPress","Eleventy","Gulp"],
+    "skillsUX":["Prototyping","Responsive design","Tableau","Accessibility","WAI-ARIA","PhotoShop","Illustrator","Figma","Mockups","XD"],
+    "skillsM365":["SharePoint","Power Automate","Power Apps","#SPFX","Azure","Power BI","Logic Apps","Teams","Nintex Workflow","JSON View Formatting","Lists"]
 }
