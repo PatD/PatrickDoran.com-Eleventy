@@ -13,19 +13,19 @@
     <li><a href="/">
       Home
     </a>
-      <li><a href="/work">
+      <li><a href="/work" {{ 'class=active' if '/work' in page.url }}>
       Work
     </a>
-    <li><a href="/about">
+    <li><a href="/about" {{ 'class=active' if '/about' in page.url }}>
       About
     </a>
-  <li><a href="/history">
+  <li><a href="/history" {{ 'class=active' if '/history' in page.url }}>
       History
     </a>
-  <li><a href="/writing">
+  <li><a href="/writing" {{ 'class=active' if '/writing' in page.url }}>
       Writing
     </a>
-     <li> <a href="/speaking">
+     <li> <a href="/speaking" {{ 'class=active' if '/speaking' in page.url }}>
       Speaking
     </a>
     <li>
