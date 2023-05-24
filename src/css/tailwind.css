@@ -244,8 +244,8 @@ menu span{
 
 #intro img{
     @apply  rounded-full border-sky-200 border-8 w-40 h-40 mx-auto mb-5
-            hover:animate-pulse
-            md:float-right md:ml-8 md:w-52 md:h-52
+            
+            md:float-right md:ml-8 md:w-56 md:h-56
 }
 
 #intro time a{
@@ -324,11 +324,13 @@ menu span{
 
 
 footer{
-    @apply mb-40 pt-5 px-5 text-center text-yellow-100
+    @apply mb-40 pt-9 px-5 text-yellow-100
 }
 
-footer p{
-    @apply text-sm text-left
+
+footer img{
+    @apply rounded-full border-sky-200 border-4 mx-auto mb-5 w-28 h-auto           
+    md:float-left md:mr-8 md:mt-1
 }
 
 
